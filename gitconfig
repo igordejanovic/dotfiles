@@ -1,0 +1,9 @@
+[user]
+	email = igor.dejanovic@gmail.com
+	name = Igor Dejanovic
+;[http]
+;	sslVerify = false
+[push]
+	default = upstream
+[svn]
+	rmdir = true
