@@ -341,7 +341,6 @@ call add(s:settings.plugin_groups, 'misc')
       let g:pymode_rope_find_it_bind='gu'
       let g:pymode_virtualenv=1
       let g:pymode_rope = 0
-      let g:pymode_rope=0
     "}}}
     NeoBundleLazy 'davidhalter/jedi-vim', {'autoload':{'filetypes':['python']}} "{{{
       let g:jedi#popup_on_dot=0
@@ -471,7 +470,6 @@ call add(s:settings.plugin_groups, 'misc')
       let NERDTreeShowLineNumbers=1
       let NERDTreeChDirMode=0
       let NERDTreeShowBookmarks=1
-      let NERDTreeIgnore=['\.git','\.hg']
       let NERDTreeBookmarksFile=s:get_cache_dir('NERDTreeBookmarks')
       nnoremap <F2> :NERDTreeToggle<CR>
       nnoremap <F3> :NERDTreeFind<CR>
