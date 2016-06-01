@@ -654,6 +654,10 @@ call add(s:settings.plugin_groups, 'misc')
     nmap <silent> <leader>ev :e $MYVIMRC<CR>
     nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+    " Copy file path of the current file to the clipboard
+    noremap <silent> <F7> :let @+=expand("%:p")<CR>
+    noremap <silent> <S-F7> :let @+=expand("%:t")<CR>
+
     " remap arrow keys
     nnoremap <left> :bprev<CR>
     nnoremap H :bprev<CR>
