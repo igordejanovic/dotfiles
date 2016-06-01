@@ -736,9 +736,6 @@ call add(s:settings.plugin_groups, 'misc')
     nnoremap <leader>ff :execute 'vimgrep /'.@/.'/g %'<cr>:copen<cr>
 
     " shortcuts for windows {{{
-      nnoremap <leader>v <C-w>v<C-w>l
-      nnoremap <leader>s <C-w>s
-      nnoremap <leader>vsa :vert sba<cr>
       nnoremap <C-h> <C-w>h
       nnoremap <C-j> <C-w>j
       nnoremap <C-k> <C-w>k
