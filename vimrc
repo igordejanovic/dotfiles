@@ -753,7 +753,7 @@ call add(s:settings.plugin_groups, 'misc')
     nnoremap Y y$
 
     " window killer
-    nnoremap <silent> Q :call CloseWindowOrKillBuffer()<cr>
+    " nnoremap <silent> Q :call CloseWindowOrKillBuffer()<cr>
 
     " quick buffer open
     nnoremap gb :ls<cr>:e #
