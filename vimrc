@@ -782,7 +782,10 @@ call add(s:settings.plugin_groups, 'misc')
       nnoremap <silent> <leader>DC :exe ":profile continue"<cr>
       nnoremap <silent> <leader>DQ :exe ":profile pause"<cr>:noautocmd qall!<cr>
     "}}}
-    
+
+    "Grepping
+    nnoremap <leader>ff <Esc>:Ggrep <cword> <CR> :copen<CR>
+    nnoremap <leader>fp <Esc>:grep -R --include="*.py" <C-r><C-w> *<CR> :copen<CR>
 
     " Support for vim keyboard shortcuts in Serbian latin layout {{{
       map č ;
