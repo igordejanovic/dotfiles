@@ -346,6 +346,11 @@ call add(s:settings.plugin_groups, 'misc')
     NeoBundleLazy 'davidhalter/jedi-vim', {'autoload':{'filetypes':['python']}} "{{{
       let g:jedi#popup_on_dot=0
     "}}}
+    NeoBundleLazy 'tmhedberg/SimpylFold', {'autoload':{'filetypes':['python']}} "{{{
+      let g:SimpylFold_docstring_preview = 1
+      autocmd BufWinEnter *.py setlocal foldexpr=SimpylFold(v:lnum) foldmethod=expr
+      autocmd BufWinLeave *.py setlocal foldexpr< foldmethod<
+    "}}}
   endif "}}}
   if count(s:settings.plugin_groups, 'go') "{{{
     NeoBundleLazy 'jnwhiteh/vim-golang', {'autoload':{'filetypes':['go']}}
