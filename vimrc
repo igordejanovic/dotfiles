@@ -6,7 +6,7 @@ let g:ycm_auto_trigger = 0
 
 " initialize default settings
 let s:settings = {}
-let s:settings.default_indent = 2
+let s:settings.default_indent = 4
 let s:settings.max_column = 80
 let s:settings.enable_cursorcolumn = 0
 let s:settings.colorscheme = 'badwolf'
