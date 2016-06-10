@@ -626,7 +626,7 @@ call add(s:settings.plugin_groups, 'misc')
       let g:vimtex_view_general_viewer = 'okular'
       let g:vimtex_view_general_options = '--unique @pdf\#src:@line@tex'
       let g:vimtex_view_general_options_latexmk = '--unique'
-    "  let g:vimtex_latexmk_build_dir="build"
+      let g:vimtex_latexmk_build_dir="build"
     " }}
   endif
   "}}}
