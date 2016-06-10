@@ -894,7 +894,7 @@ call add(s:settings.plugin_groups, 'misc')
     autocmd FileType python setlocal foldmethod=indent
     autocmd FileType markdown setlocal nolist
     autocmd FileType vim setlocal fdm=indent keywordprg=:help
-    autocmd BufNewFile,BufRead *.template setlocal syntax=django
+    autocmd BufNewFile,BufRead *.template setlocal filetype=django syntax=django
     autocmd BufNewFile,BufRead Snakefile set syntax=snakemake
     autocmd BufNewFile,BufRead *.snake set syntax=snakemake
   "}}}
