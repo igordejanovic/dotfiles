@@ -630,6 +630,7 @@ call add(s:settings.plugin_groups, 'misc')
     "}}}
     NeoBundle 'milkypostman/vim-togglelist'
     NeoBundle 'igordejanovic/textx.vim'
+    NeoBundle 'igordejanovic/textx-er.vim'
     NeoBundle 'jceb/vim-orgmode'
     " Latex support
     NeoBundle 'lervag/vimtex' " {{
