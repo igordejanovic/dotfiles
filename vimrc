@@ -396,7 +396,7 @@ call add(s:settings.plugin_groups, 'misc')
       let g:UltiSnipsExpandTrigger="<tab>"
       let g:UltiSnipsJumpForwardTrigger="<tab>"
       let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-      let g:UltiSnipsSnippetsDir='~/.vim/snippets'
+      let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
     "}}}
     " Closing of scratch buffer after function select
     " http://stackoverflow.com/questions/3105307/how-do-you-automatically-remove-the-preview-window-after-autocompletion-in-vim
