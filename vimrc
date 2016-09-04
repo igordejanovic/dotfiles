@@ -9,8 +9,13 @@ let s:settings = {}
 let s:settings.default_indent = 4
 let s:settings.max_column = 80
 let s:settings.enable_cursorcolumn = 0
-let s:settings.colorscheme = 'badwolf'
+"let s:settings.colorscheme = 'badwolf'
 "let s:settings.colorscheme = 'github'
+"let s:settings.colorscheme = 'eclipse'
+let s:settings.colorscheme = 'gruvbox'
+"let s:settings.colorscheme = 'pencil'
+let s:settings.background='dark'
+"let s:settings.background='light'
 let s:settings.autocomplete_method = 'ycm'
 
 let s:settings.plugin_groups = []
@@ -904,20 +909,19 @@ call add(s:settings.plugin_groups, 'misc')
     autocmd BufNewFile,BufRead *.snake set syntax=snakemake
   "}}}
   " color schemes {{{
-    NeoBundle 'altercation/vim-colors-solarized' "{{{
-      let g:solarized_termcolors=256
-      let g:solarized_termtrans=1
-    "}}}
     NeoBundle 'nanotech/jellybeans.vim'
     NeoBundle 'tomasr/molokai'
     NeoBundle 'chriskempson/vim-tomorrow-theme'
     NeoBundle 'chriskempson/base16-vim'
     NeoBundle 'w0ng/vim-hybrid'
     NeoBundle 'sjl/badwolf'
+    NeoBundle 'reedes/vim-colors-pencil'
+    NeoBundle 'morhetz/gruvbox'
     NeoBundle 'zeis/vim-kolor' "{{{
       let g:kolor_underlined=1
     "}}}
 
+    exec 'set background='.s:settings.background
     exec 'colorscheme '.s:settings.colorscheme
   "}}}
   " finish loading {{{
